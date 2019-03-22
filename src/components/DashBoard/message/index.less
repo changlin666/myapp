@@ -1,0 +1,54 @@
+.message{  
+    &-context{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &-eve{
+            width: 24%;
+            &-con{
+                display: flex;
+            }  
+        }
+    }
+    :global{  
+        .ant-card{
+            font-size: 50px;
+            .ant-statistic{
+                margin-left: 20px;
+            }
+        }
+    }        
+}
+@media(max-width:1024px){
+    .message{  
+        &-context{
+            display: flex;
+            justify-content: space-between;
+            &-eve{
+                width: 49%;
+                margin-top: 10px;
+                &-con{
+                    display: flex;
+                }  
+            }
+        }
+    }
+}
+@media(max-width:414px){
+    .message{  
+        &-context{
+            display: flex;
+            justify-content: space-between;
+            &-eve{
+                width: 100%;
+                margin-top: 10px;
+                &-con{
+                    display: flex;
+                    overflow: hidden;
+                    text-overflow:ellipsis;
+                    white-space: nowrap;
+                }  
+            }
+        }
+    }
+}

@@ -1,0 +1,74 @@
+.use {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    // flex-wrap: wrap;
+     :global{
+        .ant-btn{
+            color:#d897eb;
+            border-color: #d897eb;
+        }
+            .ant-avatar{
+                height: 60px;
+                width: 60px;
+            }
+           .ant-card{
+            height: 400px;
+                &-cover{
+                    opacity: 0.5;
+                }
+                &-meta{
+                    position: absolute;
+                    top: 50px;
+                    left: 140px;
+                    &-title{
+                        position: absolute;
+                        top: 70px;
+                        left: 10px;    
+                    }
+                }
+                .ant-statistic-title{
+                    margin-top: 16px;
+                    margin-bottom: 1em;
+                    color: #757575;
+                    text-align: center;
+                }
+                .ant-statistic-content{
+                    font-size: 20px;
+                    text-align: center;
+                }  
+           }
+           
+        }
+    >div{
+        width: 340px;
+        height: 400px;
+    }
+    &-table{
+        background-color: #fff;
+    }
+    &-middle{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    &-right{
+        &-button{
+            margin-top: 30px;
+           text-align: center; 
+        }
+    }
+  
+}
+@media(max-width:1024px){
+    .use{
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        >div{
+            width: 100%;
+        }
+        &-middle{
+          margin: 10px 0;
+        }
+    }
+    
+}
